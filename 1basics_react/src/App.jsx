@@ -9,11 +9,15 @@ function App() {
   const addValue = () => {
     console.log("value added", count);
     // count = count + 1
-    if (count >= 20) {
-      console.log({count});
-    } else {
+    // if (count >= 20) {
+    //   console.log({count});
+    // } 
+    // else {
+    //   setCount(count + 1)
+    // }
+    do {
       setCount(count + 1)
-    }
+    } while (count >= 20)
   }
 
   const removeValue = () => {
