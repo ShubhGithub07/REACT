@@ -1,6 +1,7 @@
 import Try from "./Try"
 import { useState } from "react";
 import Card from "./components/Card";
+import Password from "./components/Password";
 
 function App() {
   // const username = "Good Morning"
@@ -44,6 +45,10 @@ function App() {
         <h2>Counter value: {count}</h2>
         <button onClick={addValue}>Add value {count}</button><br />
         <button onClick={removeValue}>Remove value {count}</button>
+
+        <Password />
+
+        
         <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
           <div className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl">
             <button onClick={() => setColor("red")} className="outline-none px-4 py-1 rounded-full text-white shadow-lg" style={{backgroundColor: "red"}}>Red</button>
