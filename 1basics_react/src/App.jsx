@@ -10,51 +10,51 @@ function App() {
   // let count = 15
 
   // Currency
-  const [amount, setAmount] = useState(0);
-  const [from, setFrom] = useState("usd");
-  const [to, setTo] = useState("inr");
-  const [convertedAmount, setConvertedAmount] = useState(0);
+  // const [amount, setAmount] = useState(0);
+  // const [from, setFrom] = useState("usd");
+  // const [to, setTo] = useState("inr");
+  // const [convertedAmount, setConvertedAmount] = useState(0);
 
-  const currencyInfo = useCurrencyInfo(from);
-  const options = Object.keys(currencyInfo);
-  const swap = () => {
-    setFrom(to);
-    setTo(from);
-    setConvertedAmount(amount);
-    setAmount(convertedAmount);
-  };
+  // const currencyInfo = useCurrencyInfo(from);
+  // const options = Object.keys(currencyInfo);
+  // const swap = () => {
+  //   setFrom(to);
+  //   setTo(from);
+  //   setConvertedAmount(amount);
+  //   setAmount(convertedAmount);
+  // };
 
-  const convert = () => {
-    setConvertedAmount(amount * currencyInfo[to]);
-  };
+  // const convert = () => {
+  //   setConvertedAmount(amount * currencyInfo[to]);
+  // };
 
-  // Color, Counter
-  let [color, setColor] = useState("white");
-  let [count, setCount] = useState(10);
+  // // Color, Counter
+  // let [color, setColor] = useState("white");
+  // let [count, setCount] = useState(10);
 
-  const addValue = () => {
-    console.log("value added", count);
-    // count = count + 1
-    // if (count >= 20) {
-    //   console.log({count});
-    // }
-    // else {
-    //   setCount(count + 1)
-    // }
-    do {
-      setCount(count + 1);
-    } while (count >= 20);
-  };
+  // const addValue = () => {
+  //   console.log("value added", count);
+  //   // count = count + 1
+  //   // if (count >= 20) {
+  //   //   console.log({count});
+  //   // }
+  //   // else {
+  //   //   setCount(count + 1)
+  //   // }
+  //   do {
+  //     setCount(count + 1);
+  //   } while (count >= 20);
+  // };
 
-  const removeValue = () => {
-    console.log("value removed", count);
+  // const removeValue = () => {
+  //   console.log("value removed", count);
 
-    if (count <= 0) {
-      console.log({ count });
-    } else {
-      setCount(count - 1);
-    }
-  };
+  //   if (count <= 0) {
+  //     console.log({ count });
+  //   } else {
+  //     setCount(count - 1);
+  //   }
+  // };
 
   return (
     <>
